@@ -26,6 +26,10 @@ jobs:
       - name: 🔍 Terraform Format Check
         run: terraform fmt -check
 
+      - name: Check Terraform formatting
+        run: terraform fmt -check -diff -recursive
+ 
+
       - name: 📋 Terraform Validate
         run: terraform validate
 
